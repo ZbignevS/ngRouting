@@ -1,0 +1,11 @@
+<nav>
+  <div class="logo"><img src="../../assets/logo2.png" alt="LOGO"></div>
+  <div class="nav-link"><a [ngClass]="{'underline': getCurrentURL() == '/'}" routerLink="/" class="menu-item">HOME</a></div>
+  <div class="nav-link"><a [ngClass]="{'underline': getCurrentURL() == '/products'}" routerLink="/products" class="menu-item">PRODUCTS</a></div>
+  <div class="nav-link"><a [ngClass]="{'underline': getCurrentURL() == '/templates'}" routerLink="/templates" class="menu-item">TEMPLATES</a></div>
+  <div class="nav-link"><a [ngClass]="{'underline': getCurrentURL() == '/pricing'}" routerLink="/pricing" class="menu-item">PRICING</a></div>
+</nav>
+<div class="sign-container">
+  <input type="button" class="sign-in" value="SIGN IN">
+  <input type="button" class="sign-up" value="SIGN UP">
+</div>
